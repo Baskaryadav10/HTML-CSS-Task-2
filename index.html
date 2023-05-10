@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Picture Task</title>
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+</head>
+<body>
+    <div class="student-profile py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card shadow-sm">
+                <div class="card-header bg-transparent text-center">
+                  <img class="profile_img" src="data:image/jpeg;base64,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" alt="student dp">
+                  <h3>Baskar S</h3>
+                </div>
+                <div class="card-body">
+                  <p class="mb-0"><strong class="pr-1">Student ID:</strong>510618114007</p>
+                  <p class="mb-0"><strong class="pr-1">Class:</strong>Bachelor of Engineering</p>
+                  <p class="mb-0"><strong class="pr-1">Section:</strong>A</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="card shadow-sm">
+                <div class="card-header bg-transparent border-0">
+                  <h3 class="mb-0"><i class="far fa-clone pr-1"></i>General Information</h3>
+                </div>
+                <div class="card-body pt-0">
+                  <table class="table table-bordered">
+                    <tr>
+                      <th width="30%">Roll</th>
+                      <td width="2%">:</td>
+                      <td>007</td>
+                    </tr>
+                    <tr>
+                        <th width="30%">Department</th>
+                        <td width="2%">:</td>
+                        <td>B.E-Mechanical</td>
+                      </tr>
+                    <tr>
+                      <th width="30%">Academic Year	</th>
+                      <td width="2%">:</td>
+                      <td>2018-2022</td>
+                    </tr>
+                    <tr>
+                      <th width="30%">Gender</th>
+                      <td width="2%">:</td>
+                      <td>Male</td>
+                    </tr>
+                    <tr>
+                      <th width="30%">Religion</th>
+                      <td width="2%">:</td>
+                      <td>Hindu</td>
+                    </tr>
+                    <tr>
+                        <th width="30%">blood</th>
+                        <td width="2%">:</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <th width="30%">height</th>
+                        <td width="2%">:</td>
+                        <td>169 cm</td>
+                    </tr>
+                    <tr>
+                        <th width="30%">weight</th>
+                        <td width="2%">:</td>
+                        <td>72 kg</td>
+                      </tr>
+                  </table>
+                </div>
+              </div>
+                <div style="height: 26px"></div>
+              <div class="card shadow-sm">
+                <div class="card-header bg-transparent border-0">
+                  <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Other Information</h3>
+                </div>
+                <div class="card-body pt-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
